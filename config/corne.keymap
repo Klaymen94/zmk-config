@@ -29,7 +29,6 @@
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
@@ -39,7 +38,6 @@
 
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&hm RGUI SEMI>, <&kp SQT>;
@@ -47,7 +45,6 @@
 
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt LCTRL TAB>, <&kp ESC>;
@@ -72,7 +69,6 @@
 
     macros {
         vim_quit: vim_quit {
-            label = "ZM_vim_quit";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp ESC &kp COLON &kp W &kp Q>;
